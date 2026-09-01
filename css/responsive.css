@@ -1,0 +1,91 @@
+/* =========================================================
+   RESPONSIVE LAYOUT
+========================================================= */
+
+@media (max-width: 950px) {
+    .compliment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .song-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .song-copy {
+        text-align: center;
+    }
+
+    .song-quote {
+        border-left: 0;
+        padding-left: 0;
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .page {
+        min-height: 100vh;
+        padding: 75px 6% 130px;
+    }
+
+    .hero-heart {
+        font-size: 65px;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+    }
+
+    .lead {
+        font-size: 22px;
+    }
+
+    .compliment-grid,
+    .quiz-options,
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quiz-card,
+    .guess-card,
+    .question-card,
+    .music-card {
+        padding: 28px 20px;
+    }
+
+    .button-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .button-row .button {
+        width: 100%;
+    }
+
+    .page-nav {
+        right: 6%;
+        bottom: 25px;
+        left: 6%;
+    }
+
+    .page-nav .button {
+        min-width: 100px;
+        padding: 11px 15px;
+    }
+
+    .vinyl {
+        width: 175px;
+        height: 175px;
+    }
+
+    .photo-slot {
+        min-height: 230px;
+    }
+}
