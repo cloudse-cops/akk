@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Play 🎮</title>
+
+    <!-- Shared typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Shared styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <!-- Floating decorative hearts -->
+    <div id="effects-layer" aria-hidden="true"></div>
+
+    <main class="page fade-in">
+        
+        <div class="page-content narrow">
+            <div class="center">
+                <p class="eyebrow">Mini game</p>
+
+                <h2>Let me learn something about you 🎮</h2>
+
+                <p class="muted">
+                    I don't know everything about you yet...
+                    so let's fix that a little. 👀
+                </p>
+            </div>
+
+            <div class="quiz-card">
+                <p
+                    class="progress-label"
+                    id="quiz-progress-text"
+                >
+                    Question 1 of 5
+                </p>
+
+                <div class="progress-track">
+                    <div
+                        class="progress-bar"
+                        id="quiz-progress-bar"
+                    ></div>
+                </div>
+
+                <h3
+                    class="quiz-question"
+                    id="quiz-question"
+                >
+                    Coffee ☕ or Tea 🍵?
+                </h3>
+
+                <div
+                    class="quiz-options"
+                    id="quiz-options"
+                ></div>
+
+                <p
+                    class="quiz-response"
+                    id="quiz-response"
+                    aria-live="polite"
+                ></p>
+            </div>
+        </div>
+    
+
+        <!-- Every page has Back / page number / Next controls. -->
+        <nav class="page-nav" aria-label="Page navigation">
+            <a class="button button-soft" data-page-link href="03-compliments.html">← Back</a>
+
+            <span class="page-nav-center">
+                04 / 09
+            </span>
+
+            <a class="button button-primary" data-page-link href="05-guess.html">Next →</a>
+        </nav>
+    </main>
+
+    <!-- Shared JavaScript -->
+    <script src="../data/content.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script src="../js/quiz.js"></script>
+</body>
+</html>

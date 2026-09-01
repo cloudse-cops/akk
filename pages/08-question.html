@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Little Question ❤️</title>
+
+    <!-- Shared typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Shared styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <!-- Floating decorative hearts -->
+    <div id="effects-layer" aria-hidden="true"></div>
+
+    <main class="page fade-in">
+        
+        <div class="page-content narrow">
+            <div class="question-card">
+                <p class="eyebrow">Okay... one little question</p>
+
+                <h2 id="question-title" style="color: pink;">
+                    Would you let me get to know you a little better? ❤️
+                </h2>
+
+                <p
+                    class="question-subtext"
+                    id="question-subtext"
+                    style="color: pink;"
+                >
+                    No pressure. This is supposed to make you smile,
+                    not trap you. 😌
+                </p>
+
+                <div class="button-row">
+                    <button
+                        class="button button-primary"
+                        id="yes-button"
+                        type="button"
+                    >
+                        YES ❤️
+                    </button>
+
+                    <button
+                        class="button button-outline"
+                        id="no-button"
+                        type="button"
+                    >
+                        NO 🙈
+                    </button>
+                </div>
+
+                <p
+                    class="no-message"
+                    id="no-message"
+                    aria-live="polite"
+                ></p>
+
+                <button
+                    class="decline-link"
+                    id="decline-button"
+                    type="button"
+                >
+                    I'd rather not ❤️
+                </button>
+            </div>
+        </div>
+    
+
+        <!-- Every page has Back / page number / Next controls. -->
+        <nav class="page-nav" aria-label="Page navigation">
+            <a class="button button-soft" data-page-link href="07-photos.html">← Back</a>
+
+            <span class="page-nav-center">
+                08 / 09
+            </span>
+
+            <a class="button button-primary" data-page-link href="09-final.html">Next →</a>
+        </nav>
+    </main>
+
+    <!-- Shared JavaScript -->
+    <script src="../data/content.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script src="../js/question.js"></script>
+</body>
+</html>

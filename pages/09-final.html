@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maybe The Beginning 💝</title>
+
+    <!-- Shared typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Shared styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <!-- Floating decorative hearts -->
+    <div id="effects-layer" aria-hidden="true"></div>
+
+    <main class="page fade-in">
+        
+        <div class="page-content narrow center">
+            <span class="final-heart pulse">💝</span>
+
+            <p class="eyebrow">Maybe this is the beginning</p>
+
+            <h2>Before you leave...</h2>
+
+            <div class="final-lines">
+                <p>You're beautiful. 🌸</p>
+                <p>You're ridiculously cute. 🥹</p>
+                <p>You have a vibe that's hard to ignore. ✨</p>
+
+                <p>
+                    And somehow...
+                    <strong>
+                        you're someone I really want to know better.
+                    </strong>
+                    ❤️
+                </p>
+            </div>
+
+            <p class="final-note">
+                So maybe this isn't the end...
+                <br>
+                <strong>maybe it's the beginning. 👀🌷</strong>
+            </p>
+
+            <button
+                class="button button-primary"
+                id="surprise-button"
+                type="button"
+            >
+                One last little surprise 💕
+            </button>
+        </div>
+    
+
+        <!-- Every page has Back / page number / Next controls. -->
+        <nav class="page-nav" aria-label="Page navigation">
+            <a class="button button-soft" data-page-link href="08-question.html">← Back</a>
+
+            <span class="page-nav-center">
+                09 / 08
+            </span>
+
+            <span></span>
+        </nav>
+    </main>
+
+    <!-- Shared JavaScript -->
+    <script src="../data/content.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        const surpriseButton =
+            document.getElementById("surprise-button");
+
+        surpriseButton.addEventListener("click", () => {
+            window.createHeartBurst?.(65);
+
+            surpriseButton.textContent =
+                "You're kind of my favorite distraction. ❤️";
+        });
+    </script>
+</body>
+</html>

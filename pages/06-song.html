@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Song That Reminds Me Of You 🎵</title>
+
+    <!-- Shared typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Shared styles -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <!-- Floating decorative hearts -->
+    <div id="effects-layer" aria-hidden="true"></div>
+
+    <main class="page fade-in">
+        
+        <div class="page-content song-layout">
+            <div class="song-copy">
+                <p class="eyebrow">
+                    A song that reminds me of you
+                </p>
+
+                <h2>
+                    Sometimes music says it better. 🎵
+                </h2>
+
+                <p>
+                    There's this song...
+                    and whenever I listen to it,
+                    somehow <strong>I remember you.</strong> ❤️
+                </p>
+
+                <p>
+                    Maybe it's the feeling.
+                    Maybe it's the lyrics.
+                    Maybe it's simply because
+                    you've been on my mind more than I expected. 👀
+                </p>
+
+                <p class="song-quote">
+                    “Some songs are just songs...
+                    and some songs become a person.”
+                </p>
+            </div>
+
+            <div class="music-card">
+                <div
+                    class="vinyl"
+                    id="vinyl"
+                    aria-hidden="true"
+                >
+                    <span class="vinyl-center">❤️</span>
+                </div>
+
+                <p class="music-kicker">A SONG FOR YOU</p>
+
+                <h3>Our Almost-Song</h3>
+
+                <p class="muted">
+                    This is for you❤️.
+                </p>
+
+                <audio
+                    id="romantic-audio"
+                    src="../song.mp3"
+                    preload="metadata"
+                ></audio>
+
+                <button
+                    class="button button-primary"
+                    id="music-button"
+                    type="button"
+                >
+                    ▶ Play the song
+                </button>
+
+                <p class="music-note">
+                    
+                    <strong></strong>
+                </p>
+            </div>
+        </div>
+    
+
+        <!-- Every page has Back / page number / Next controls. -->
+        <nav class="page-nav" aria-label="Page navigation">
+            <a class="button button-soft" data-page-link href="05-guess.html">← Back</a>
+
+            <span class="page-nav-center">
+                06 / 09
+            </span>
+
+            <a class="button button-primary" data-page-link href="07-photos.html">Next →</a>
+        </nav>
+    </main>
+
+    <!-- Shared JavaScript -->
+    <script src="../data/content.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script src="../js/music.js"></script>
+</body>
+</html>
